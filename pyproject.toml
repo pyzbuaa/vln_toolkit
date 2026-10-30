@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vln-toolkit"
+version = "0.1.0"
+description = "Scene representations and navigation data generation for Isaac Sim"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "PyYAML>=6", "shapely>=2"]
+
+[project.optional-dependencies]
+usd = ["usd-core>=24.3"]
+
+[dependency-groups]
+dev = ["pytest>=7", "ruff>=0.8"]
+
+[tool.uv]
+required-version = ">=0.8"
+cache-dir = ".uv-cache"
+
+[[tool.uv.index]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = ["isaac: requires an installed Isaac Sim runtime"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+

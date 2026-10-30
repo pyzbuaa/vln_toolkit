@@ -1,0 +1,11 @@
+# World geometry bounds: X approx [-7.62, 7.62], Y approx [-7.03, 7.03].
+# Native omap lower/upper bounds are OFFSETS from the scan origin.
+# These offsets cover world X [-8, 8], Y [-7.5, 7.5].
+occupancy:
+  resolution: 0.1 
+  origin: [3.0, 2.0, 0.3]
+  lower_bound: [-11.0, -9.5, 0.0]
+  upper_bound: [5.0, 5.5, 0.0]
+  floor_z: 0.0
+  agent_radius: 0.28
+  freeze_rigid_bodies: true

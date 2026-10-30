@@ -1,0 +1,5 @@
+# Use authored USD semantics. Do not assign the example living_room polygon.
+# Room membership requires separately verified polygons or upstream graph import.
+include_unlabeled: false
+near_distance: 0.5
+touching_distance: 0.06

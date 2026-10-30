@@ -1,0 +1,7 @@
+count: 20
+seed: 42
+min_distance: 1.0
+max_distance: 20.0
+allow_diagonal: true
+language: zh
+

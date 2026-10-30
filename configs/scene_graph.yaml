@@ -1,0 +1,13 @@
+include_unlabeled: true
+near_distance: 0.5
+touching_distance: 0.06
+rooms:
+  living_room:
+    category: living_room
+    polygon: [[-4, -4], [4, -4], [4, 4], [-4, 4]]
+# Optional explicit labels for VLNTube-like datasets:
+# category_roots:
+#   /Root/Meshes/Furniture/Chair: chair
+# semantic_categories:
+#   /World/SomeInstance: chair
+
